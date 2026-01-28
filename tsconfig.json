@@ -8,14 +8,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "paths": {
-      "db/mock": ["./src/db/mock.ts"]
-    }
+    "resolveJsonModule": true
   },
-  "include": ["src/**/*", "vitest.config.ts"]
+  "files": [],
+  "references": [{ "path": "./packages/app" }]
 }

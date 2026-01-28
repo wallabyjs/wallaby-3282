@@ -2,10 +2,14 @@
   "name": "vitest-split-projects",
   "version": "1.0.0",
   "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test": "vitest",
-    "test:unit": "vitest --project unit",
-    "test:browser": "vitest --project browser"
+    "test": "npm run test --workspaces",
+    "test:unit": "npm run test:unit --workspaces",
+    "test:browser": "npm run test:browser --workspaces"
   },
   "devDependencies": {
     "@vitest/browser": "^4.0.0",
